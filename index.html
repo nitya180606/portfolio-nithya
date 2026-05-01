@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P. Sri Nithya — Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cur" id="cur"></div>
+    <div class="cur-ring" id="curRing"></div>
+    <div id="particles"></div>
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <a class="nav-logo" href="#home">Sri <span>Nithya</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a
+        class="nav-resume"
+        href="./resume.pdf"
+        download="SriNithya_Resume.pdf"
+        onclick="window.open('./resume.pdf')"
+        >↓ Resume</a
+      >
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <!-- LEFT -->
+        <div class="hero-left">
+          <div class="hero-badge">Available for Internships</div>
+          <h1 class="hero-name">
+            P. Sri<br />
+            <span class="italic">Nithya</span>
+          </h1>
+          <p class="hero-tagline">
+            CS Student · <strong>Coder</strong> · Builder
+          </p>
+          <p class="hero-desc">
+            Learning deeply. Building consistently.<br />
+            A 3rd year CSE student at BVRIT who loves cracking problems and
+            turning ideas into working software.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn-primary" href="#projects">See My Work</a>
+            <a class="btn-ghost" href="#contact">Let's Talk</a>
+          </div>
+        </div>
+        <!-- RIGHT -->
+        <div class="hero-right">
+          <div class="hero-card-wrap">
+            <div class="hero-glass-card">
+              <div class="hgc-top">
+                <div class="hgc-dot green"></div>
+                <span class="hgc-label">nithya.profile</span>
+              </div>
+              <div class="hgc-avatar">SN</div>
+              <div class="hgc-name">P. Sri Nithya</div>
+              <div class="hgc-role">CS Student · BVRIT</div>
+              <div class="hgc-divider"></div>
+              <div class="hgc-rows">
+                <div class="hgc-row">
+                  <span class="hgc-key">CGPA</span
+                  ><span class="hgc-val accent">9.52 / 10</span>
+                </div>
+                <div class="hgc-row">
+                  <span class="hgc-key">Focus</span
+                  ><span class="hgc-val">Web Dev · DSA</span>
+                </div>
+                <div class="hgc-row">
+                  <span class="hgc-key">Year</span
+                  ><span class="hgc-val">3rd Year B.Tech</span>
+                </div>
+                <div class="hgc-row">
+                  <span class="hgc-key">Status</span
+                  ><span class="hgc-val"
+                    ><span class="hgc-badge">Open to Internships</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hero-mini-card hmc-1">
+              <span class="hmc-icon">🔥</span>
+              <div>
+                <div class="hmc-val">1700+</div>
+                <div class="hmc-label">Rating.Leetcode</div>
+              </div>
+            </div>
+            <div class="hero-mini-card hmc-2">
+              <span class="hmc-icon">⭐</span>
+              <div>
+                <div class="hmc-val">5 Star</div>
+                <div class="hmc-label">Python · HackerRank</div>
+              </div>
+            </div>
+            <div class="hero-mini-card hmc-3">
+              <span class="hmc-icon">🏅</span>
+              <div>
+                <div class="hmc-val">9 Certs</div>
+                <div class="hmc-label">Earned</div>
+              </div>
+            </div>
+            <div class="hero-ring hero-ring-1"></div>
+            <div class="hero-ring hero-ring-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="stat-val">9.52<span></span></div>
+        <div class="stat-key">CGPA</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">500<span>+</span></div>
+        <div class="stat-key">Rated Problems · CodeChef</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">9<span></span></div>
+        <div class="stat-key">Certifications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">5<span>★</span></div>
+        <div class="stat-key">Python · HackerRank</div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="main" id="about">
+      <div class="sec-eyebrow reveal">About Me</div>
+      <h2 class="sec-title reveal">The person<br />behind the <em>code</em></h2>
+      <div class="about-grid">
+        <div class="glass-card reveal">
+          <div class="about-hello">Hello there 👋</div>
+          <p class="about-body">
+            I'm <strong>Sri Nithya</strong>, a 3rd year Computer Science student
+            at BVRIT, Narsapur. Coding is what genuinely excites me — whether
+            it's solving a tricky algorithm or building something that actually
+            works end-to-end.
+          </p>
+          <p class="about-body">
+            I'm in my <strong>learning phase</strong>, actively building
+            projects across web development and exploring what's possible with
+            code. I believe in going deep into things — not just scratching the
+            surface.
+          </p>
+          <p class="about-body">
+            Currently mentoring juniors in coding at my college, which keeps me
+            sharp and grounded.
+          </p>
+        </div>
+        <div class="glass-card reveal d1">
+          <div class="info-list">
+            <div class="info-row">
+              <span class="info-key">Name</span>
+              <span class="info-val">P. Sri Nithya</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">College</span>
+              <span class="info-val">BVRIT, Narsapur</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Year</span>
+              <span class="info-val">3rd Year B.Tech CSE</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">CGPA</span>
+              <span class="info-val">9.52 / 10</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Focus</span>
+              <span class="info-val">Web Dev · DSA · Coding</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key">Status</span>
+              <span class="info-val"
+                ><span class="badge-pill">Open to Internships</span></span
+              >
+            </div>
+            <div class="info-row">
+              <span class="info-key">Email</span>
+              <span class="info-val">nithya.pabba@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="main" id="skills">
+      <div class="sec-eyebrow reveal">Skills</div>
+      <h2 class="sec-title reveal">What I <em>work with</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-title">Languages</div>
+          <div class="tags">
+            <span class="tag">C</span><span class="tag">Python</span>
+            <span class="tag">Java</span><span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-card reveal d1">
+          <div class="skill-card-title">Web Technologies</div>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">React</span><span class="tag">Node.js</span>
+            <span class="tag">Flask</span>
+          </div>
+        </div>
+        <div class="skill-card reveal d2">
+          <div class="skill-card-title">Data & ML (Project-based)</div>
+          <div class="tags">
+            <span class="tag">Pandas</span><span class="tag">NumPy</span>
+            <span class="tag">TensorFlow</span
+            ><span class="tag">Scikit-Learn</span>
+            <span class="tag">XGBoost</span>
+          </div>
+        </div>
+        <div class="skill-card reveal d1">
+          <div class="skill-card-title">Databases & Tools</div>
+          <div class="tags">
+            <span class="tag">SQL</span><span class="tag">Firebase</span>
+            <span class="tag">Git</span><span class="tag">GitHub</span>
+          </div>
+        </div>
+        <div class="skill-card reveal d2">
+          <div class="skill-card-title">CS Fundamentals</div>
+          <div class="tags">
+            <span class="tag">DSA</span><span class="tag">OOP</span>
+            <span class="tag">DBMS</span
+            ><span class="tag">Software Engineering</span>
+          </div>
+        </div>
+        <div class="skill-card reveal d3">
+          <div class="skill-card-title">Soft Skills</div>
+          <div class="tags">
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Self-Learning</span>
+            <span class="tag">Adaptability</span>
+            <span class="tag">Mentoring</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="main" id="projects">
+      <div class="sec-eyebrow reveal">Projects</div>
+      <h2 class="sec-title reveal">Things I've <em>built</em></h2>
+      <div class="projects-grid">
+        <div class="project-card reveal" data-tilt>
+          <div class="project-num">01</div>
+          <div class="project-title">PrithviPhal</div>
+          <p class="project-desc">
+            A smart farming web app that predicts crop yield in tons/hectare
+            from simple farm inputs — powered by an XGBoost ML model. Built as
+            independent microservices with React, Node.js, Flask, and Firebase.
+          </p>
+          <div class="project-stack">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">Flask</span>
+            <span class="project-tag">XGBoost</span>
+            <span class="project-tag">Firebase</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 12px; color: var(--dim)"
+              >Crop Yield Prediction</span
+            >
+            <a
+              class="project-link"
+              href="https://prithviphal-frontend.onrender.com/"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card reveal d1" data-tilt>
+          <div class="project-num">02</div>
+          <div class="project-title">HyperSpectral Image Classification</div>
+          <p class="project-desc">
+            A 3D CNN-based deep learning model to classify hyperspectral remote
+            sensing images using spatial-spectral features. Applied
+            dimensionality reduction via LLE.
+          </p>
+          <div class="project-stack">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">Scikit-Learn</span>
+            <span class="project-tag">3D CNN</span>
+            <span class="project-tag">LLE</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 12px; color: var(--dim)"
+              >Deep Learning · Remote Sensing</span
+            >
+            <a
+              class="project-link"
+              href="https://github.com/nitya180606/hsi-classification"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card reveal d2" data-tilt>
+          <div class="project-num">03</div>
+          <div class="project-title">LeetMetric</div>
+          <p class="project-desc">
+            A clean tool that fetches and displays LeetCode statistics for any
+            username — showing problem counts, difficulty breakdown, and
+            rankings. Built to practice API integration.
+          </p>
+          <div class="project-stack">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">API Integration</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 12px; color: var(--dim)"
+              >Practice Project</span
+            >
+            <a
+              class="project-link"
+              href="https://nitya180606.github.io/leetmetric/"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card reveal d3" data-tilt>
+          <div class="project-num">04</div>
+          <div class="project-title">Movie Ticket Booking System</div>
+          <p class="project-desc">
+            A console-based movie booking system in C handling reservations,
+            cancellations, and seat availability. Users can view show timings
+            and book tickets through the command line.
+          </p>
+          <div class="project-stack">
+            <span class="project-tag">C</span>
+            <span class="project-tag">File Handling</span>
+            <span class="project-tag">Data Structures</span>
+          </div>
+          <div class="project-footer">
+            <span style="font-size: 12px; color: var(--dim)"
+              >Systems Programming</span
+            >
+            <a
+              class="project-link"
+              href="https://github.com/nitya180606/Movieticketbookingysystem"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="main" id="experience">
+      <div class="sec-eyebrow reveal">Experience</div>
+      <h2 class="sec-title reveal">Where I've <em>grown</em></h2>
+      <div class="exp-list">
+        <div class="exp-card reveal">
+          <div class="exp-date">2025 · Ongoing</div>
+          <div>
+            <div class="exp-role">Coding Mentor</div>
+            <div class="exp-company">Smart Interviews · BVRIT, Narsapur</div>
+            <ul class="exp-points">
+              <li>
+                Selected to mentor juniors in the Smart Interviews coding
+                program conducted at BVRIT.
+              </li>
+              <li>
+                Guiding students through DSA concepts, competitive programming
+                strategies, and problem-solving approaches.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card reveal d1">
+          <div class="exp-date">Apr – Jun 2025</div>
+          <div>
+            <div class="exp-role">Pragathi Trainee · Cohort 4</div>
+            <div class="exp-company">Infosys · Online</div>
+            <ul class="exp-points">
+              <li>
+                Completed a 12-week structured training covering programming,
+                problem-solving, and business communication.
+              </li>
+              <li>
+                Worked through technical challenges and soft skill modules to
+                strengthen overall employability.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card reveal d2">
+          <div class="exp-date">Oct 22 – Nov 5, 2024</div>
+          <div>
+            <div class="exp-role">ML Intern</div>
+            <div class="exp-company">IBM SkillsBuild · Online</div>
+            <ul class="exp-points">
+              <li>
+                15-day focused internship on foundational data science and
+                machine learning concepts.
+              </li>
+              <li>
+                Gained hands-on experience with ML workflows and data processing
+                techniques.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="main" id="education">
+      <div class="sec-eyebrow reveal">Education</div>
+      <h2 class="sec-title reveal">Academic <em>background</em></h2>
+      <div class="edu-card reveal">
+        <div>
+          <div class="edu-degree">B.Tech in Computer Science & Engineering</div>
+          <div class="edu-inst">
+            B V Raju Institute of Technology · Narsapur, Telangana
+          </div>
+          <div class="edu-meta">
+            2023 – 2027 &nbsp;·&nbsp; Currently in 3rd Year
+          </div>
+          <div style="margin-top: 24px">
+            <div class="tags">
+              <span class="tag">DSA</span><span class="tag">OOP</span>
+              <span class="tag">DBMS</span
+              ><span class="tag">Software Engineering</span>
+              <span class="tag">Web Development</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-cgpa-wrap">
+          <div class="edu-cgpa-num">9.52</div>
+          <div class="edu-cgpa-label">CGPA</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="main" id="certifications">
+      <div class="sec-eyebrow reveal">Certifications</div>
+      <h2 class="sec-title reveal">Credentials &amp; <em>Badges</em></h2>
+      <p class="cert-hint reveal">
+        Click any floating card to view details &amp; certificate
+      </p>
+
+      <!-- FLOATING ARENA -->
+      <div class="cert-arena" id="certArena">
+        <!-- floating cards injected by JS -->
+      </div>
+
+      <!-- DETAIL PANEL (shown on click) -->
+      <div class="cert-panel" id="certPanel">
+        <button class="cert-panel-close" id="certPanelClose">✕ Close</button>
+        <div class="cert-panel-inner">
+          <div class="cert-panel-img-wrap">
+            <div class="cert-panel-placeholder" id="panelPlaceholder">
+              <span id="panelEmoji" style="font-size: 48px"></span>
+              <div class="cpp-label">Certificate Image</div>
+              <div class="cpp-sub">Add your image path in script.js</div>
+            </div>
+            <img
+              class="cert-panel-img"
+              id="panelImg"
+              src=""
+              alt=""
+              style="display: none"
+            />
+          </div>
+          <div class="cert-panel-info">
+            <div class="cert-panel-issuer" id="panelIssuer"></div>
+            <div class="cert-panel-name" id="panelName"></div>
+            <div class="cert-panel-desc" id="panelDesc"></div>
+            <a class="cert-panel-btn" id="panelLink" href="#" target="_blank"
+              >View Certificate ↗</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ACHIEVEMENTS -->
+      <div class="sec-eyebrow reveal" style="margin-top: 80px">
+        Achievements
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card reveal">
+          <span class="ach-emoji">⭐</span>
+          <div class="ach-title">5-Star Python on HackerRank</div>
+          <div class="ach-sub">+ 4-star badges in Java & C</div>
+        </div>
+        <div class="ach-card reveal d1">
+          <span class="ach-emoji">🔥</span>
+          <div class="ach-title">1700+ rating on Leetcode</div>
+          <div class="ach-sub">200+ problems · DSA & Algorithms</div>
+        </div>
+        <div class="ach-card reveal d2">
+          <span class="ach-emoji">🏅</span>
+          <div class="ach-title">9 Certifications</div>
+          <div class="ach-sub">IIT Madras · Salesforce · NPTEL · Cisco</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CODING PROFILES -->
+    <section class="main" id="coding">
+  <div class="sec-eyebrow reveal">Coding Profiles</div>
+  <h2 class="sec-title reveal">Find me <em>online</em></h2>
+  <div class="profiles-grid">
+    <a class="profile-card reveal" href="https://github.com/nitya180606" target="_blank">
+      <span class="profile-icon">🐙</span>
+      <div class="profile-name">GitHub</div>
+      <span class="profile-handle">nitya180606</span>
+      <span class="profile-pill">Projects & Code</span>
+    </a>
+    <a class="profile-card reveal d1" href="https://leetcode.com/Nithya_18_01" target="_blank">
+      <span class="profile-icon">🧩</span>
+      <div class="profile-name">LeetCode</div>
+      <span class="profile-handle">Nithya_18_01</span>
+      <span class="profile-pill">DSA Practice</span>
+    </a>
+    <a class="profile-card reveal d2" href="https://www.codechef.com/users/srinithya18" target="_blank">
+      <span class="profile-icon">👨‍🍳</span>
+      <div class="profile-name">CodeChef</div>
+      <span class="profile-handle">srinithya18</span>
+      <span class="profile-pill">500+ Rated Problems</span>
+    </a>
+    <a class="profile-card reveal d3" href="https://www.hackerrank.com/srinithya18" target="_blank">
+      <span class="profile-icon">💚</span>
+      <div class="profile-name">HackerRank</div>
+      <span class="profile-handle">srinithya18</span>
+      <span class="profile-pill">5★ Python</span>
+    </a>
+    <a class="profile-card reveal d4" href="https://www.geeksforgeeks.org/profile/nithyaf1ts" target="_blank">
+      <span class="profile-icon">🟢</span>
+      <div class="profile-name">GeeksForGeeks</div>
+      <span class="profile-handle">nithyaf1ts</span>
+      <span class="profile-pill">Problem Solving</span>
+    </a>
+  </div>
+</section>
+    <!-- CONTACT -->
+    <section class="main" id="contact">
+      <div class="sec-eyebrow reveal">Contact</div>
+      <h2 class="sec-title reveal">Let's <em>connect</em></h2>
+      <div class="contact-wrap">
+        <div class="contact-left reveal">
+          <div class="contact-tagline">
+            Got an opportunity or just want to say hi?
+          </div>
+          <p class="contact-desc">
+            I'm actively looking for internship opportunities where I can
+            contribute, learn, and grow. Feel free to reach out — I usually
+            respond within a day.
+          </p>
+          <a class="contact-email-link" href="mailto:nithya.pabba@gmail.com"
+            >📬 nithya.pabba@gmail.com</a
+          >
+          <div class="socials">
+            <a
+              class="social-btn"
+              href="https://www.linkedin.com/in/pabba-sri-nithya-4796b328a"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="social-btn"
+              href="https://github.com/nitya180606"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              class="social-btn"
+              href="https://leetcode.com/Nithya_18_01"
+              target="_blank"
+              >LeetCode</a
+            >
+            <a
+              class="social-btn"
+              href="https://www.codechef.com/users/srinithya18"
+              target="_blank"
+              >CodeChef</a
+            >
+            <a
+              class="social-btn"
+              href="https://www.geeksforgeeks.org/profile/nithyaf1ts"
+              target="_blank"
+              >GeeksForGeeks</a>
+          </div>
+        </div>
+        <div class="reveal d1">
+          <div class="contact-form">
+            <div class="form-title">Send a message</div>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input
+                type="text"
+                id="from_name"
+                placeholder="e.g. Priya Sharma"
+              />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input
+                type="email"
+                id="from_email"
+                placeholder="priya@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Hi Nithya, I'd love to..."
+              ></textarea>
+            </div>
+            <button class="btn-send" onclick="sendEmail()">
+              Send Message →
+            </button>
+            <div class="form-msg" id="form-msg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-left">
+        © 2025 — <strong>P. Sri Nithya</strong> · Built with care
+      </div>
+      <div class="footer-right">CSE · BVRIT · Narsapur</div>
+    </footer>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
